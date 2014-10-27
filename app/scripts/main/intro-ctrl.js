@@ -1,13 +1,14 @@
 'use strict';
 
 angular.module('famousAngularStarter')
-  .controller('MainCtrl', function ($scope, $famous) {
+  .controller('IntroCtrl', function ($scope, $famous) {
     var Transitionable = $famous['famous/transitions/Transitionable'];
     var Timer = $famous['famous/utilities/Timer'];
 
+    
 
     $scope.spinner = {
-      speed: 10
+      speed: 55
     };
     $scope.rotateY = new Transitionable(0);
 
